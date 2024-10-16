@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: CatalogInfo
+
+entities:
+  - name: service
+    description: A software service
+  - name: library
+    description: A reusable library
+
+relationships:
+  - type: dependsOn
+    from: service
+    to: library
